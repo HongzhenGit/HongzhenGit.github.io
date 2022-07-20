@@ -119,56 +119,54 @@
       <hr />
       <!--<h3>Instructor and Designer</h3>-->
       <h4><b>Volume Forecast of Home Loan Applications(DFS, 02.2022 - 05.2022)</b></h4>
-      Make forecast on future loan application volumes. This project is raised mainly becasue of the significant increase in house price in USA during 2021. This huge
-      increase in house price brings a boost in home equity, which contributed a lot to the momentum for home equity loan applications. To handle a large apllication volume, 
-      more stuff are needed to process these loans. In other words, a forecast of future volume is required to decide how many agents that need to be hired.  
-      <ul>
+      This project is raised mainly becasue of the significant increase in house price in USA during 2021. This 18% increase in house price brings a boost of $3.2 trillion in home equity, 
+      which contributed a lot to the momentum for home equity loan applications. In this case, more stuff are needed to help on the applications due to this momentum. We built a time series model based 
+      on Prophet(Developed by Meta Open Source) and made predictions on future application volumes to help us estimate the number of newly hired agents that are required.
+      Here is a similar and simpler project based on public dataset(<a href="https://github.com/HongzhenGit/Time-Series-Forecasting">Forecast on electricity demand in AUS</a>)
+      <!--<ul>
        <li>Data preparation and pre-processing(resample the data, fill up null values, remove outliers).</li>
        <li>Correlation anlysis to get the extra regressors that may help improve the model explanation capability.</li>
        <li>Model training and validation based on Prophet Package(Developed by Meta Open Source).</li>
        <li>Make predictions on future volumes and estimate the number of agents that need to be hired.</li>
        <li>Here is a similar and simpler project based on public dataset(<a href="https://github.com/HongzhenGit/Time-Series-Forecasting">Forecast on electricity demand in AUS</a>)</li>
        <!--<li><a href="https://tyleransom.github.io/research/TenPrinciplesOfEconOfEd.pdf">10 Principles of the Economics of Education</a></li>-->
-      </ul>
+      </ul>-->
       <h4><b>NLP research on Customers Complaints(DFS, 03.2021 - 07.2021)</b></h4>
       With the continuous increase in market share that DFS products possess, lots of text comments(or voice transcripts) are received by our agents, which include feedbacks, general comments 
-      and customer complaints. It is hard to review these text materials manually, so an automated document analysis tool is necessary to help on the analysis and classifications.
-      <ul>
+      and customer complaints. It is hard to review these text materials manually, so an automated document analysis tool is necessary to help on the analysis and classifications. We constructed 
+      a binary classifer with pre-trained BERT to detect complaints from a large set of texts, and then took advantage of a Random Forest classifier to devide these complaints into a set of 
+      determined categories. For non-labeled complaints, a network-based community detection method is leveraged to analyse their natrual clusters.
+      <!--<ul>
        <li>Text preprocessing(Remove punctuations and stopwords, Word Steming or Lemmatization..)  </li>
        <li>Build a binary classifier based on BERT to detect complaints</li>
        <li>Construct a Random Forest(RF) model for complaint categorization</li>
        <li>Analyse non-labeled complaints with Community Detection Technology(Network Analysis)</li> 
        <li>Here is a similar and simpler project based on public dataset(<a href="https://github.com/HongzhenGit/NLP-Research">One VS Rest Document Classifier</a>)</li> 
-      </ul>
+      </ul>-->
       <h4><b>Feature Selection for Generalized Memory Polynomial(GMP) Model(ADI, 07.2019 - 01.2020)</b></h4>
-      Generalized Memory Polynomial(GMP) Model is a widely-used compensation structure in Digital Pre-Distortion. To get a desirable improvment in linearity, this GMP model could be very complex,
-      which means, lots of circuit components need to be embeded on one chip(One feature in GMP needs a group of components). To reduce cost and simplify the structure of DPD,
-      a good solution is to only keep those featrues that have significant impact on the compensation of linearity. However, DPD is working on the frequency domain, in other words, the data used 
-      to build GMP model are complex numbers, so it is necessary to extend some optimization and feature selection methods to make them available for complex numbers.
-      <ul>
+      Generalized Memory Polynomial(GMP) Model is a widely-used compensation structure in Digital Pre-Distortion. To get a desirable improvment in linearity, a GMP model could be very complex,
+      which means lots of circuit components need to be embeded on one chip. To reduce cost and simplify the structure of DPD, a good solution is to only keep those featrues that have significant impact on the compensation of linearity. 
+      However, DPD is working on the frequency domain and the signal data used to build GMP model are complex numbers. To deal with this issue, We did research into the gradient descent and Gauss-Newton method in complex domain to help us estimate the parameters of a standard GMP model, 
+      and leveraged the method mentiond in <a href="https://doi.org/10.1121/1.5042363 ">Muhammad Tabassum and Esa Ollila</a> to get a sparse version of GMP model.
+      <!--<ul>
        <li>Gradient Descent and Gauss-Newton Method in the complex domain</li>
        <li>LASSO regression in the complex domain</li>
        <li>Research on LASSO solution path</li>
        <li>A reference for complex lasso(<a href="https://doi.org/10.1121/1.5042363 ">Muhammad Naveed Tabassum and Esa Ollila</a>)</li>
-      </ul>
-      <!--<h4><b>Econ 360: Foundations of Matlab (Duke University, Summer 2012)</b></h4>-->
-      <!--This course is geared towards rising second-year PhD students in order to equip them with the quantitative skills required for courses and research beyond the first year of graduate school.-->
-      <!--<ul>
-       <li><a href="https://github.com/tyleransom/MatlabCourse">Course GitHub repository</a></li>
-       <li><a href="https://tyleransom.github.io/teaching/MatlabRatingsSu2012.pdf">Aggregated Course Ratings</a></li>
-       <li><a href="https://tyleransom.github.io/teaching/MatlabRatings.pdf">Individual Course Ratings</a></li>
       </ul>-->
       <hr />
       <h3 style="margin-top:2px margin-bottom:6px">Other Projects</h3>
-      <h4 style="margin-top:6px">Data Management Platform developed on PyQt(DFS, 08.2020 - 01.2021)</h4>
-      A platform developed on PyQt to maintain the invoice data from third party vendors.
-      <ul>
+      <h4 style="margin-top:6px">Data Management Platform developed with PyQt(DFS, 08.2020 - 01.2021)</h4>
+      This is a desktop application developed with PyQt to maintain the invoice data from third party vendors. We built the connections between our app and data warehouses(Teradata, Snowflake, MySQL..).
+      With these connections, our application could structure the data from vendors and upload them onto our data warehouses automatically. Besides, some visualization reports are also constructed to track the 
+      performance of thrid party costs.
+      <!--<ul>
         <li>Developed a desktop application based on PyQt</li>
         <li>Build the connection between app and data warehouse(Teradata, Snowflake, MySQL..)</li>
         <li>Automatically structrue the data from vendors and upload them onto data warehouse</li>
         <li>Construct visualization reports to track the cost performance of vendors</li>
-      </ul>     
-      <hr />
+      </ul>   
+      <hr />-->  
       </section>
     </div>
     <script src="javascripts/scale.fix.js"></script>
